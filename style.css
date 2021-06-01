@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
+
+body {
+  font-family: "Open Sans Condesed", sans-serif;
+  background: url("assets/background.svg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  font-size: 16px;
+  color: #000000cc;
+}
+img {
+  height: 600px;
+  max-width: 100%;
+  transform: translateY(33%);
+}
+
+a:hover {
+  color: #000000cc;
+}
+nav {
+  margin-top: 5rem;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header i {
+  color: #999;
+  margin-right: 0.75rem;
+  font-size: 25px;
+}
+
+.intro {
+  margin-top: 10rem;
+}
+
+#greetings {
+  font-size: 20px;
+  color: #019292;
+}
+
+.intro h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.intro h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.intro p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.links {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  left: 90%;
+  bottom: 10%;
+}
+
+.contacts {
+  color: white;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+}
+.contact-info {
+  font-weight: 100;
+}
+.contacts i {
+  margin-right: 0.75rem;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-image: url("assets/background-mobile.svg");
+    background-size: cover;
+  }
+  nav {
+    margin-left: 1rem;
+  }
+  .links {
+    left: 0;
+    writing-mode: unset;
+    position: static;
+    color: #000000cc;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  img {
+    position: relative;
+    transform: translateY(-20%);
+    border-radius: 50px;
+    height: auto;
+  }
+
+  #greetings {
+    color: #999;
+  }
+}
