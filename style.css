@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   color: #000000cc;
 }
-img {
+#avatar {
   height: 600px;
   max-width: 100%;
   transform: translateY(33%);
@@ -75,6 +75,23 @@ header i {
   margin-right: 0.75rem;
 }
 
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+}
+
+.carousel-caption a {
+  color: #019292;
+  text-decoration: none;
+}
+
+.carousel-caption {
+  background-color: rgba(230, 230, 230, 0.582);
+}
+
 @media screen and (max-width: 576px) {
   body {
     background-image: url("assets/background-mobile.svg");
@@ -83,23 +100,26 @@ header i {
   nav {
     margin-left: 1rem;
   }
-  .links {
-    left: 0;
-    writing-mode: unset;
-    position: static;
-    color: #000000cc;
-  }
 }
 
 @media screen and (max-width: 1200px) {
   img {
     position: relative;
-    transform: translateY(-20%);
+    transform: translateY(-43%);
     border-radius: 50px;
     height: auto;
   }
 
   #greetings {
     color: #999;
+  }
+  .links {
+    left: 0;
+    writing-mode: unset;
+    position: static;
+    color: #000000cc;
+  }
+  .carousel-caption {
+    font-size: 15px;
   }
 }
